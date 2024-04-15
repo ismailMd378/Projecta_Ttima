@@ -1,2 +1,2 @@
-from . import RutaBicicleta
+from . import models
 
