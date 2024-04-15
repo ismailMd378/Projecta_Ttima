@@ -1,6 +1,6 @@
 from odoo import models, fields
 
-class RutaBicicleta(models.Model):
+class ReservaRutas(models.Model):
     _name = 'rutas.bicicleta'
     _description = 'Modelo para almacenar rutas de bicicleta'
      
@@ -13,7 +13,7 @@ class RutaBicicleta(models.Model):
     CodiGrup = fields.Many2one('Codi ', string = 'Codi Grup')
    
 
-class TaulaRutes(models.Model):
+class RutasBicicleta(models.Model):
     _name = 'taula.rutes'
     _description = 'Taula de rutes'
 
