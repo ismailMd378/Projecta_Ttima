@@ -13,6 +13,16 @@ class RutaBicicleta(models.Model):
     CodiGrup = fields.Many2one('Codi ', string = 'Codi Grup')
    
 
+class TaulaRutes(models.Model):
+    _name = 'taula.rutes'
+    _description = 'Taula de rutes'
+
+    codi_ruta = fields.Char('CodiRuta', size=4, required=True)
+    nom = fields.Char('Nom', size=50)
+    preu = fields.Float('Preu', digits=(7, 2))
+
+
+
 
     
 
