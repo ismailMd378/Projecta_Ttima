@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- Vista de formulario -->
+        <record id="view_ruta_bicicleta_form" model="ir.ui.view">
+            <field name="name">rutas.bicicleta.form</field>
+            <field name="model">rutas.bicicleta</field>
+            <field name="arch" type="xml">
+                <form string="Ruta de Bicicleta">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="distancia"/>
+                            <field name="dificultad"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vista de lista -->
+        <record id="view_ruta_bicicleta_tree" model="ir.ui.view">
+            <field name="name">rutas.bicicleta.tree</field>
+            <field name="model">rutas.bicicleta</field>
+            <field name="arch" type="xml">
+                <tree string="Rutas de Bicicleta">
+                    <field name="name"/>
+                    <field name="distancia"/>
+                    <field name="dificultad"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Acciones -->
+        <record id="action_ruta_bicicleta" model="ir.actions.act_window">
+            <field name="name">Rutas de Bicicleta</field>
+            <field name="res_model">rutas.bicicleta</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_ruta_bicicleta" name="Rutas de Bicicleta" parent="base.menu_sales" action="action_ruta_bicicleta"/>
+    </data>
+</odoo>
