@@ -11,7 +11,7 @@ class RutaBicicleta(models.Model):
     DataReserva = fields.Date('Data Reserva')
     CodiIntermidiari = fields.Many2one('Intermidiari.model', string = 'Codi_Intermidiari')
     CodiGrup = fields.Many2one('Codi ')
-    GrupRuta = fields.Many2one('Grup.model', string = 'CodiGrup')
+    GrupRuta = fields.Many2one('Grup.model', string = 'Codikrup')
 
     
 
