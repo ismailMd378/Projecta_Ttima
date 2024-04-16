@@ -1,8 +1,8 @@
 from odoo import models, fields
 
-class RutaBicicleta(models.Model):
-    _name = 'rutas.bicicleta'
-    _description = 'Modelo para almacenar rutas de bicicleta'
+class Reserves(models.Model):
+    _name = 'rutas_bicicleta.reserves'
+    _description = 'Taula de Reserves'
      
     CodiReserva = fields.Char('Codi Reserva' , size=7, required=True)
     DataArrivada = fields.Date('Date Arivada')
@@ -10,8 +10,10 @@ class RutaBicicleta(models.Model):
     Num_Bicis = fields.Integer('Num De Bicis')
     DataReserva = fields.Date('Data Reserva')
     CodiIntermidiari = fields.Many2one('Intermidiari.model', string = 'Codi_Intermidiari')
-    CodiGrup = fields.Many2one('Codi ')
-    GrupRuta = fields.Many2one('Grup.model', string = 'Codikrup')
+    CodiGrup = fields.Many2one('Codi.grup', string='Code Groupe')
+    GrupRuta = fields.Many2one('Codi.Ruta', string = 'Codi Ruta')
+    CodiTarifa = fields.Many2one('Codi.Tarifa, string = 'Codi Tarifa)
+    
 
     
 
