@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_intermediaris_form" model="ir.ui.view">
+        <field name="name">view.intermediaris.form</field>
+        <field name="model">rutas_bicicleta.intermediaris</field>
+        <field name="arch" type="xml">
+            <form string="Intermediari">
+                <sheet>
+                    <group>
+                        <field name="CodiIntermidiari"/>
+                        <field name="Nom"/>
+                        <field name="Adressa"/>
+                        <field name="Poblacio"/>
+                        <field name="CP"/>
+                        <field name="Pais"/>
+                        <field name="Telefons"/>
+                        <field name="PersonaContacte"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record id="view_intermediaris_tree" model="ir.ui.view">
+        <field name="name">view.intermediaris.tree</field>
+        <field name="model">rutas_bicicleta.intermediaris</field>
+        <field name="arch" type="xml">
+            <form string="Intermediari">
+                <sheet>
+                    <group>
+                        <field name="CodiIntermidiari"/>
+                        <field name="Nom"/>
+                        <field name="Adressa"/>
+                        <field name="Poblacio"/>
+                        <field name="CP"/>
+                        <field name="Pais"/>
+                        <field name="Telefons"/>
+                        <field name="PersonaContacte"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

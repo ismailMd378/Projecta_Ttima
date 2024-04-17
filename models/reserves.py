@@ -5,7 +5,6 @@ class Reserves(models.Model):
     _description = 'Taula de Reserves'
      
     CodiReserva = fields.Char('Codi Reserva' , size=7, required=True)
-<<<<<<< HEAD
     DataArrivada = fields.Date('Date Arivada')
     NitExtra = fields.Boolean('Nit Extra')
     Num_Bicis = fields.Integer('Num De Bicis')
