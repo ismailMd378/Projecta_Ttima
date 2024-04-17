@@ -12,7 +12,7 @@ class Reserves(models.Model):
     CodiIntermidiari = fields.Many2one('Intermidiari.model', string = 'Codi_Intermidiari')
     CodiGrup = fields.Many2one('Codi.grup', string='Code Groupe')
     GrupRuta = fields.Many2one('Codi.Ruta', string = 'Codi Ruta')
-    CodiTarifa = fields.Many2one('Codi.Tarifa, string = 'Codi Tarifa)
+    CodiTarifa = fields.Many2one('Codi.Tarifa', string = 'Codi Tarifa')
     
 
     

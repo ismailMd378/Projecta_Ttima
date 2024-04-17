@@ -10,7 +10,9 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.cvs',
-        'views/reserves_views.xml',
+        'views/reserves.xml',
+        'views/grups.xml',
+        'views/persones.xml',
     ],
     'installable': True,
     'auto_install': False,
