@@ -7,3 +7,5 @@ from . import reserves
 from . import rutes
 
 
+from . import reserves
+from . import persones
