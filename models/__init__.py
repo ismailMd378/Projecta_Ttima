@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-from . import reserves
-from . import grups
-from . import persona
-from . import rutes
-from . import cases
-=======
 from . import cases
 from . import grups
 from . import Habitacions
@@ -13,7 +6,4 @@ from . import persones
 from . import reserves
 from . import rutes
 
-
-
->>>>>>> Hicham
 

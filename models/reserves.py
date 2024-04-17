@@ -17,14 +17,3 @@ class Reserves(models.Model):
 
     
 
-=======
-    CodiIntermidiari = fields.Many2one('Intermidiari.model', string = 'Codi_Intermidiari')
-    CodiGrup = fields.Many2one('Codi.grup', string='Code Groupe')
-    GrupRuta = fields.Many2one('Codi.Ruta', string = 'Codi Ruta')
-    CodiTarifa = fields.Many2one('Codi.Tarifa', string = 'Codi Tarifa')
-    DataArribada = fields.Date('Date d\ Arribada')
-    DataSortida = fields.Date('Data de Sortida')
-    NitExtra = fields.Boolean('Nit Extra')
-    Num_Bicis = fields.Integer('Num De Bicis', size=3)
-    DataReserva = fields.Date('Data de Reserva')
->>>>>>> Hicham
