@@ -4,7 +4,11 @@ class Grups(models.Model):
     _name = 'rutas_bicicleta.grups'
     _description ='Taula de Grups'
     
+<<<<<<< HEAD
     CodiGrup = fields.Char('Codi Grups', size=6,required=True)
+=======
+    CodiGrup = fields.Char('Codi Grups', size=6, required=True)
+>>>>>>> Hicham
     CodiPersonalEnCap = fields.Many2One('Personal.model', string='Personal en Cap')
     Adressa = fields.Char('Adressa', size=50)
     Poblacion = fields.Char('Poblacion', size=30)
