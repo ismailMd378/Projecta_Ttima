@@ -5,7 +5,7 @@ class Grups(models.Model):
     _description ='Taula de Grups'
     
     CodiGrup = fields.Char('Codi Grups', size=6,required=True)
-    CodiPersonalEnCap = fields.Many2One('Persones.model', string='Personal en Cap')
+    CodiPersonalEnCap = fields.Char('Persones.model', string='Personal en Cap')
     Adressa = fields.Char('Adressa', size=50)
     Poblacion = fields.Char('Poblacion', size=30)
     CP = fields.Char('Codi Postal', size=5)
