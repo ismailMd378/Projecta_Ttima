@@ -1,8 +1,8 @@
 from odoo import models, fields
 
-class Intermediaris (models.Model):
-    _name = 'rutas_bicicleta.intermediaris'
-    _description ='Taula de Intermediaris'
+class Intermediaris(models.Model):
+    _name = 'projecta_ttima.intermediaris'
+    _description = 'Taula de Intermediaris'
     CodiIntermidiari = fields.Char('Codi Intermidiari', size=4)
     Nom = fields.Char('Nom', size=50)
     Adressa = fields.Char('Adressa', size=50)

@@ -1,3 +1,4 @@
-from . import Intermidiaris
-from . import reserves
-from . import persones
+# -*- coding: utf-8 -*-
+
+from . import models
+from . import views

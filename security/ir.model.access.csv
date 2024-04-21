@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_persones,model_persones,model_projecta_ttima_persones,base.group_user,1,1,1,1
+access_reserves,model_reserves,model_projecta_ttima_reserves,base.group_user,1,1,1,1
+access_rutes,model_rutes,model_projecta_ttima_rutes,base.group_user,1,1,1,1
+access_intermediaris,model_intermediaris,model_projecta_ttima_intermediaris,base.group_user,1,1,1,1
+access_grups,model_grups,model_projecta_ttima_grups,base.group_user,1,1,1,1
+access_cases,model_cases,model_projecta_ttima_cases,base.group_user,1,1,1,1
+access_habitacions,model_habitacions,model_projecta_ttima_habitacions,base.group_user,1,1,1,1

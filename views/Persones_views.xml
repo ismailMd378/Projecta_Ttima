@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Formulario -->
+        <record id="view_persones_form" model="ir.ui.view">
+            <field name="name">persones.form</field>
+            <field name="model">projecta_ttima.persones</field>
+            <field name="arch" type="xml">
+                <form string="Persones">
+                    <sheet>
+                        <group>
+                            <field name="CodiPersona"/>
+                            <field name="Nom"/>
+                            <field name="AnyNaixement"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Árbol -->
+        <record id="view_persones_tree" model="ir.ui.view">
+            <field name="name">persones.tree</field>
+            <field name="model">projecta_ttima.persones</field>
+            <field name="arch" type="xml">
+                <tree string="Persones">
+                    <field name="CodiPersona"/>
+                    <field name="Nom"/>
+                    <field name="AnyNaixement"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,8 +1,8 @@
 from odoo import models, fields
 
 class Habitacions(models.Model):
-    _name = 'rutas_bicicleta.habitacions'
-    _description ='Taula de Habitacions'
+    _name = 'projecta_ttima.habitacions'
+    _description = 'Taula de Habitacions'
     
     CodiHabitacio = fields.Char('Codi Habitacio', size=6)
     CodiCasa = fields.Char('Codi Casa', size=3)

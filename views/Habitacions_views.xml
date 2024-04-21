@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Formulario -->
+        <record id="view_habitacions_form" model="ir.ui.view">
+            <field name="name">habitacions.form</field>
+            <field name="model">projecta_ttima.habitacions</field>
+            <field name="arch" type="xml">
+                <form string="Habitacions">
+                    <sheet>
+                        <group>
+                            <field name="CodiHabitacio"/>
+                            <field name="CodiCasa"/>
+                            <field name="Num_llits"/>
+                            <field name="Bany"/>
+                            <field name="Observacions"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Árbol -->
+        <record id="view_habitacions_tree" model="ir.ui.view">
+            <field name="name">habitacions.tree</field>
+            <field name="model">projecta_ttima.habitacions</field>
+            <field name="arch" type="xml">
+                <tree string="Habitacions">
+                    <field name="CodiHabitacio"/>
+                    <field name="CodiCasa"/>
+                    <field name="Num_llits"/>
+                    <field name="Bany"/>
+                    <field name="Observacions"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

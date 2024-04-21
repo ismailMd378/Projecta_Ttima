@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Formulario -->
+        <record id="view_grups_form" model="ir.ui.view">
+            <field name="name">grups.form</field>
+            <field name="model">projecta_ttima.grups</field>
+            <field name="arch" type="xml">
+                <form string="Grups">
+                    <sheet>
+                        <group>
+                            <field name="CodiGrup"/>
+                            <field name="CodiPersonalEnCap"/>
+                            <field name="Adressa"/>
+                            <field name="Poblacion"/>
+                            <field name="CP"/>
+                            <field name="Pais"/>
+                            <field name="Telefons"/>
+                            <field name="Num_Persones"/>
+                            <field name="Observacions"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Árbol -->
+        <record id="view_grups_tree" model="ir.ui.view">
+            <field name="name">grups.tree</field>
+            <field name="model">projecta_ttima.grups</field>
+            <field name="arch" type="xml">
+                <tree string="Grups">
+                    <field name="CodiGrup"/>
+                    <field name="CodiPersonalEnCap"/>
+                    <field name="Adressa"/>
+                    <field name="Poblacion"/>
+                    <field name="CP"/>
+                    <field name="Pais"/>
+                    <field name="Telefons"/>
+                    <field name="Num_Persones"/>
+                    <field name="Observacions"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
