@@ -1,7 +1,7 @@
 from odoo import models, fields
 
 class rutes(models.Model):
-    _name = 'rutas_bicicleta.rutes'
+    _name = 'projecta_ttima.rutes'
     _description ='Taula de Rutes'
     
     CodiRutes = fields.Integer('Codi Rutes',size=4)
