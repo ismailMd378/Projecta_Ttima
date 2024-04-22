@@ -1,17 +1,26 @@
-# -*- coding: utf-8 -*-
 {
-    'name': 'Rutas de Bicicleta',
+    'name': 'Projecta_Ttima',
     'version': '1.0',
     'category': 'Uncategorized',
-    'summary': 'Administra rutas de bicicleta',
-    'author': 'Ismail & Hicham',
-    'license': 'AGPL-3',
-    'website': 'https://www.ejemplo.com',
+    'summary': 'Breve descripción del módulo',
+    'description': """
+        Descripción detallada del módulo.
+    """,
+    'author': 'Autor del Módulo',
+    'website': 'URL del Sitio Web',
     'depends': ['base'],
     'data': [
-        'security/ir.model.access.cvs',
-        'views/reserves_views.xml',
+        # Lista de archivos de datos
+        'security/ir.model.access.csv',
+        'views/persones.xml',
+        'views/reserves.xml',
+        'views/rutes.xml',
+        'views/intermediaris.xml',
+        'views/grups.xml',
+        'views/cases.xml',
+        'views/habitacions.xml',
     ],
+    'demo': [],
     'installable': True,
     'auto_install': False,
     'application': True,

@@ -1,16 +1,15 @@
 from odoo import models, fields
 
 class Reserves(models.Model):
-    _name = 'rutas_bicicleta.reserves'
+    _name = 'projecta_ttima.reserves'
     _description = 'Taula de Reserves'
      
-    CodiReserva = fields.Char('Codi Reserva' , size=7, required=True)
-    CodiIntermidiari = fields.Many2one('Intermidiari.model', string = 'Codi_Intermidiari')
-    CodiGrup = fields.Many2one('Codi.grup', string='Code Groupe')
-    GrupRuta = fields.Many2one('Codi.Ruta', string = 'Codi Ruta')
-    CodiTarifa = fields.Many2one('Codi.Tarifa', string = 'Codi Tarifa')
-    DataArribada = fields.Date('Date d\ Arribada')
-    DataSortida = fields.Date('Data de Sortida')
+    CodiReserva = fields.Char('Codi Reserva', size=7, required=True)
+    DataArrivada = fields.Date('Data Arribada')
     NitExtra = fields.Boolean('Nit Extra')
-    Num_Bicis = fields.Integer('Num De Bicis', size=3)
-    DataReserva = fields.Date('Data de Reserva')
+    Num_Bicis = fields.Integer('Num De Bicis')
+    DataReserva = fields.Date('Data Reserva')
+    CodiIntermidiari = fields.Many2one('projecta_ttima.intermediaris', string='Codi Intermidiari')
+    CodiGrup = fields.Many2one('projecta_ttima.grups', string='Codi Grup')
+    GrupRuta = fields.Many2one('projecta_ttima.ruta', string='Codi Ruta')
+    CodiTarifa = fields.Many2one('projecta_ttima.tarifa', string='Codi Tarifa')

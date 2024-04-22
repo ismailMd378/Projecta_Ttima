@@ -1,11 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from . import cases
 from . import grups
-from . import Habitacions
-from . import Intermidiaris
+from . import habitacions
+from . import intermediaris
 from . import persones
 from . import reserves
 from . import rutes
-
-
-
-

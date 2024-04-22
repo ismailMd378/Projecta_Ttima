@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Formulario -->
+        <record id="view_cases_form" model="ir.ui.view">
+            <field name="name">cases.form</field>
+            <field name="model">projecta_ttima.cases</field>
+            <field name="arch" type="xml">
+                <form string="Cases">
+                    <sheet>
+                        <group>
+                            <field name="NIF"/>
+                            <field name="NomCasa"/>
+                            <field name="NomPersona"/>
+                            <field name="NomPersona2"/>
+                            <field name="Telefons"/>
+                            <field name="cc"/>
+                            <field name="Ubicacio"/>
+                            <field name="Adressa"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Árbol -->
+        <record id="view_cases_tree" model="ir.ui.view">
+            <field name="name">cases.tree</field>
+            <field name="model">projecta_ttima.cases</field>
+            <field name="arch" type="xml">
+                <tree string="Cases">
+                    <field name="NIF"/>
+                    <field name="NomCasa"/>
+                    <field name="NomPersona"/>
+                    <field name="NomPersona2"/>
+                    <field name="Telefons"/>
+                    <field name="cc"/>
+                    <field name="Ubicacio"/>
+                    <field name="Adressa"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
