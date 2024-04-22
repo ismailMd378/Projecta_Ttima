@@ -6,7 +6,7 @@
     'description': """
         Descripción detallada del módulo.
     """,
-    'author': 'Autor del Módulo',
+    'author': 'Ismail & Hicham',
     'website': 'URL del Sitio Web',
     'depends': ['base'],
     'data': [
