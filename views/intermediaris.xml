@@ -9,14 +9,14 @@
                 <form string="Intermediaris">
                     <sheet>
                         <group>
-                            <field name="CodiIntermediaris"/>
-                            <field name="Nom"/>
-                            <field name="Adressa"/>
-                            <field name="Poblacio"/>
-                            <field name="CP"/>
-                            <field name="Pais"/>
-                            <field name="Telefons"/>
-                            <field name="PersonaContacte"/>
+                            <field name="CodiIntermediaris" />
+                            <field name="Nom" />
+                            <field name="Adressa" />
+                            <field name="Poblacio" />
+                            <field name="CP" />
+                            <field name="Pais" />
+                            <field name="Telefons" />
+                            <field name="PersonaContacte" />
                         </group>
                     </sheet>
                 </form>
@@ -29,16 +29,37 @@
             <field name="model">projecta_ttima.intermediaris</field>
             <field name="arch" type="xml">
                 <tree string="Intermediaris">
-                    <field name="CodiIntermediaris"/>
-                    <field name="Nom"/>
-                    <field name="Adressa"/>
-                    <field name="Poblacio"/>
-                    <field name="CP"/>
-                    <field name="Pais"/>
-                    <field name="Telefons"/>
-                    <field name="PersonaContacte"/>
+                    <field name="CodiIntermediaris" />
+                    <field name="Nom" />
+                    <field name="Adressa" />
+                    <field name="Poblacio" />
+                    <field name="CP" />
+                    <field name="Pais" />
+                    <field name="Telefons" />
+                    <field name="PersonaContacte" />
                 </tree>
             </field>
         </record>
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
+
+
+        <!--  actions opening views on models  -->
+
+        <record model="ir.actions.act_window" id="projecta_ttima.action_cases">
+            <field name="name">projecta_ttima cases</field>
+            <field name="res_model">projecta_ttima.cases</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--  Top menu item  -->
+        <menuitem name="Menu Intermediaris" id="projecta_ttima.menu_intermediaris"
+            parent="projecta_ttima.menu_root" />
+
+
+        <!--  actions -->
+        <menuitem name="List" id="projecta_ttima.menu_intermediaris_list"
+            parent="projecta_ttima.menu_intermediaris"
+            action="projecta_ttima.action_intermediaris" />
     </data>
 </odoo>
