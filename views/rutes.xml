@@ -30,8 +30,8 @@
                 </tree>
             </field>
         </record>
-        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
         <!--  actions opening views on models  -->
 

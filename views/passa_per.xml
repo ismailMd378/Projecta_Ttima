@@ -1,46 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <odoo>
-    <!-- Formulario-->
-    <record id="view_passa_per_form" model="ir.model.passa_per">
-        <field name="name">passa_per.form</field>
-        <field name="model">projecta_ttima.passa_per</field>
-        <field name="arch" type="xml" />
-        <form string="passa_per">
-            <sheet>
-                <group>
+    <data>
+        <!-- Formulario-->
+        <record id="view_passa_per_form" model="ir.ui.view">
+            <field name="name">passa_per.form</field>
+            <field name="model">projecta_ttima.passa_per</field>
+            <field name="arch" type="xml" />
+            <form string="passa_per">
+                <sheet>
+                    <group>
+                        <field name="CodiRutes" />
+                        <field name="CodiCases" />
+                    </group>
+                </sheet>
+            </form>
+        </record>
+
+        <!-- Arbol -->
+        <record id="view_passa_per_tree" model="ir_ui_view">
+            <field name="name">passa_per.tree</field>
+            <field name="model">projecta_ttima.passa_per</field>
+            <field name="arch" type="xml">
+                <tree string="Caption" create="true" delete="true" edit="true" editable="bottom">
                     <field name="CodiRutes" />
                     <field name="CodiCases" />
-                </group>
-            </sheet>
-        </form>
-    </record>
-    <record id="view_passa_per_tree" model="ir_ui_view">
-        <field name="name">passa_per.tree</field>
-        <field name="model">projecta_ttima.passa_per</field>
-        <field name="arch" type="xml">
-            <tree string="Caption" create="true" delete="true" edit="true" editable="bottom">
-                <field name="CodiRutes" />
-                <field name="CodiCases" />
-            </tree>
-        </field>
-    </record>
+                </tree>
+            </field>
+        </record>
 
-    <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
-    <!-- actions opening views on models -->
+        <!-- actions opening views on models -->
 
-    <record id="projecta_ttima.action_passa_per" model="ir.actions.act_window">
-        <field name="name">projecta ttima passa_per</field>
-        <field name="res_model">projecta_ttima.passa_per</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+        <record id="projecta_ttima.action_passa_per" model="ir.actions.act_window">
+            <field name="name">projecta ttima passa_per</field>
+            <field name="res_model">projecta_ttima.passa_per</field>
+            <field name="view_mode">tree,form</field>
+        </record>
 
-    <!-- Top menu item-->
-    <menuitem name="Menu passa_per" id="projecta_ttima.passa_per" parent="projecta_ttima.menu_root" />
+        <!-- Top menu item-->
+        <menuitem name="Menu passa_per" id="projecta_ttima.menu_passa_per"
+            parent="projecta_ttima.menu_root" />
 
-    <!-- actions -->
-    <menuitem name="List" id="projecta_ttima.menu_passa_per" parent="projecta_ttima.menu_passa_per"
-        action="projecta_ttima.action_passa_per" />
-
+        <!-- actions -->
+        <menuitem name="List" id="projecta_ttima.menu_passa_per_list"
+            parent="projecta_ttima.menu_passa_per"
+            action="projecta_ttima.action_passa_per" />
+    </data>
 </odoo>
