@@ -9,7 +9,7 @@
                 <form string="Intermediaris">
                     <sheet>
                         <group>
-                            <field name="CodiIntermidiari"/>
+                            <field name="CodiIntermediaris"/>
                             <field name="Nom"/>
                             <field name="Adressa"/>
                             <field name="Poblacio"/>
@@ -29,7 +29,7 @@
             <field name="model">projecta_ttima.intermediaris</field>
             <field name="arch" type="xml">
                 <tree string="Intermediaris">
-                    <field name="CodiIntermidiari"/>
+                    <field name="CodiIntermediaris"/>
                     <field name="Nom"/>
                     <field name="Adressa"/>
                     <field name="Poblacio"/>

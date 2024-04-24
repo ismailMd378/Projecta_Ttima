@@ -9,7 +9,7 @@ class Cases(models.Model):
     NomPersona = fields.Char('Nom de Persona', size=50)
     NomPersona2 = fields.Char('Nom de Persona2', size=50)
     Telefons = fields.Char('Telefons', size=50)
-    cc = fields.Integer('cc', size=10)
+    cc = fields.Integer('cc')
     Ubicacio = fields.Char('Ubicacio', size=50)
     Adressa = fields.Char('Adressa', size=50)
 

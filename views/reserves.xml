@@ -1,95 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-    <!--  views  -->
 
         <!-- Vista de listado -->
-           <record  model="ir.ui.view" id="projecta_ttima_reserves_list"> 
-            <field name="name">projecta_ttima_reserves list</field>
+        <record model="ir.ui.view" id="projecta_ttima_reserves_list"> 
+            <field name="name">projecta_ttima reserves list</field>
             <field name="model">projecta_ttima.reserves</field>
             <field name="arch" type="xml">
-                <form string="Reserves">
-                    <tree>
-                            <field name="CodiReserva"/>
-                            <field name="DataArrivada"/>
-                            <field name="NitExtra"/>
-                            <field name="Num_Bicis"/>
-                            <field name="DataReserva"/>
-                            <field name="CodiIntermidiari"/>
-                            <field name="CodiGrup"/>
-                            <field name="GrupRuta"/>
-                            <field name="CodiTarifa"/>
-                    </tree>
-                </form>
-            </field>
-        </record>
-        <!-- Formulario -->
-        <!-- <record  model="ir.ui.view" id="projecta_ttima.reserves_form"> 
-            <field name="name">projecta_ttima reserves form</field>
-            <field name="model">projecta_ttima.reserves</field>
-            <field name="arch" type="xml">
-                <form string="Reserves">
-                    <sheet>
-                        <group>
-                            <field name="CodiReserva"/>
-                            <field name="DataArrivada"/>
-                            <field name="NitExtra"/>
-                            <field name="Num_Bicis"/>
-                            <field name="DataReserva"/>
-                            <field name="CodiIntermidiari"/>
-                             <field name="CodiGrup"/>
-                             <field name="GrupRuta"/>
-                                    <field name="CodiTarifa"/>
-                       </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
-         -->
-<!-- 
-        <record id="projecta_ttima_reserves_tree" model="ir.ui.view">
-            <field name="name">projecta_ttima_reserves.tree</field>
-            <field name="model">projecta_ttima.reserves</field>
-            <field name="arch" type="xml">
-                <tree string="Reserves">
+                <tree>
                     <field name="CodiReserva"/>
                     <field name="DataArrivada"/>
                     <field name="NitExtra"/>
                     <field name="Num_Bicis"/>
                     <field name="DataReserva"/>
-                    <field name="CodiIntermidiari"/>
+                    <field name="CodiIntermediaris"/>
                     <field name="CodiGrup"/>
-                    <field name="GrupRuta"/>
-                    <field name="CodiTarifa"/>
+                    <field name="CodiRutes"/>
                 </tree>
             </field>
-        </record> -->
+        </record>
 
-        <!--  actions opening views on models  -->
+        <!-- Vista de calendario -->
+        <record model="ir.ui.view" id="projecta_ttima_reserves_calendar">
+            <field name="name">projecta_ttima reserves calendar</field>
+            <field name="model">projecta_ttima.reserves</field>
+            <field name="arch" type="xml">
+                <calendar string="Reserves Calendar" date_start="DataArrivada" date_stop="DataReserva">
+                    <field name="CodiReserva"/>
+                    <field name="DataArrivada"/>
+                    <field name="DataReserva"/>
+                </calendar>
+            </field>
+        </record>
 
-        <!-- <record model="ir.actions.act_window" id="projecta_ttima.action_reserves">
-        <field name="name">projecta_ttima Reserves</field>    
+        <!-- Acción para abrir la vista de lista -->
+        <record model="ir.actions.act_window" id="projecta_ttima.action_reserves_list">
+            <field name="name">projecta_ttima Reserves</field>    
             <field name="res_model">projecta_ttima.reserves</field>
             <field name="view_mode">tree,form</field>
-        </record> -->
+        </record>
 
+        <!-- Acción para abrir la vista de calendario -->
+        <record model="ir.actions.act_window" id="projecta_ttima.action_reserves_calendar">
+            <field name="name">projecta_ttima Reserves Calendar</field>
+            <field name="res_model">projecta_ttima.reserves</field>
+            <field name="view_mode">calendar</field>
+        </record>
 
+        <!-- Menú principal -->
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
+        <!-- Menús -->
+        <menuitem name="Menu Reserves" id="projecta_ttima.menu_reserves" parent="projecta_ttima.menu_root"/> 
+        <menuitem name="Calendar" id="projecta_ttima.menu_reserves_calendar" parent="projecta_ttima.menu_reserves" action="projecta_ttima.action_reserves_calendar"/>
+        <menuitem name="List" id="projecta_ttima.menu_reserves_list" parent="projecta_ttima.menu_reserves" action="projecta_ttima.action_reserves_list"/> 
 
-        <!-- <record model="ir.actions.server" id="projecta_ttima.action_server">
-            <field name="name">projecta_ttima server</field>
-            <field name="model_id" ref="projecta_ttima.reserves"></field>
-            <field name="state">code</field> 
-            <field name="code">
-                action = {
-                    "type": "ir.actions.act_window",
-                    "view_mode": "tree,form",
-                    "res_model": "projecta_ttima.reserves",
-                }
-            </field>
-        </record> -->
-
-        <!--  Top menu item  -->
-        <!-- <menuitem  name="Reserves" id="projecta_ttima.menu_root" parent="projecta_ttima.menu_root"/> -->
-</data>
+    </data>
 </odoo>

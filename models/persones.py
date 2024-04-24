@@ -6,4 +6,4 @@ class Persones(models.Model):
     
     CodiPersona = fields.Char('Codi Persona', size=7)
     Nom = fields.Char('Nom', size=50)
-    AnyNaixement = fields.Integer('Any de Naixement', size=4)
+    AnyNaixement = fields.Integer('Any de Naixement')
