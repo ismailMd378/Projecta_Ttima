@@ -9,7 +9,7 @@ class PassaPer(models.Model):
         comodel_name='projecta_ttima.rutes',
         column='CodiRutes')
         
-    CodiCasa = fields.Many2one(
-        string='Codi Casa',
+    CodiCases = fields.Many2one(
+        string='Codi Cases',
         comodel_name='projecta_ttima.cases',
-        column='CodiCasa') 
+        column='CodiCases') 
