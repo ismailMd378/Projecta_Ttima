@@ -1,5 +1,5 @@
 {
-    'name': 'Projecta_Ttima',
+    'name': 'projecta_ttima',
     'version': '1.0',
     'category': 'Uncategorized',
     'summary': 'Breve descripción del módulo',
@@ -22,6 +22,6 @@
     ],
     'demo': [],
     'installable': True,
-    'auto_install': False,
+    'auto_install': True,
     'application': True,
 }

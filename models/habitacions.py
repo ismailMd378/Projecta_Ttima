@@ -6,6 +6,6 @@ class Habitacions(models.Model):
     
     CodiHabitacio = fields.Char('Codi Habitacio', size=6)
     CodiCasa = fields.Char('Codi Casa', size=3)
-    Num_llits = fields.Integer('Num_llits', size=3)
+    Num_llits = fields.Integer('Num_llits')
     Bany = fields.Boolean('Bany')
     Observacions = fields.Char('Observacions', size=50)
