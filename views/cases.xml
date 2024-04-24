@@ -9,14 +9,15 @@
                 <form string="Cases">
                     <sheet>
                         <group>
-                            <field name="NIF"/>
-                            <field name="NomCasa"/>
-                            <field name="NomPersona"/>
-                            <field name="NomPersona2"/>
-                            <field name="Telefons"/>
-                            <field name="cc"/>
-                            <field name="Ubicacio"/>
-                            <field name="Adressa"/>
+                            <field name="CodiCases" />
+                            <field name="NIF" />
+                            <field name="NomCasa" />
+                            <field name="NomPersona" />
+                            <field name="NomPersona2" />
+                            <field name="Telefons" />
+                            <field name="cc" />
+                            <field name="Ubicacio" />
+                            <field name="Adressa" />
                         </group>
                     </sheet>
                 </form>
@@ -29,39 +30,39 @@
             <field name="model">projecta_ttima.cases</field>
             <field name="arch" type="xml">
                 <tree string="Cases">
-                    <field name="NIF"/>
-                    <field name="NomCasa"/>
-                    <field name="NomPersona"/>
-                    <field name="NomPersona2"/>
-                    <field name="Telefons"/>
-                    <field name="cc"/>
-                    <field name="Ubicacio"/>
-                    <field name="Adressa"/>
+                    <field name="CodiCases" />
+                    <field name="NIF" />
+                    <field name="NomCasa" />
+                    <field name="NomPersona" />
+                    <field name="NomPersona2" />
+                    <field name="Telefons" />
+                    <field name="cc" />
+                    <field name="Ubicacio" />
+                    <field name="Adressa" />
                 </tree>
             </field>
         </record>
 
 
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
-    <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
+        <!--  actions opening views on models  -->
 
-     <!--  actions opening views on models  -->
-
-        <record model="ir.actions.act_window" id="projecta_ttima.action_cases">
-            <field name="name">projecta_ttima cases</field>    
+        <record id="projecta_ttima.action_cases" model="ir.actions.act_window">
+            <field name="name">projecta_ttima cases</field>
             <field name="res_model">projecta_ttima.cases</field>
             <field name="view_mode">tree,form</field>
-        </record> 
-
+        </record>
 
 
         <!--  Top menu item  -->
-        <menuitem  name="Menu Cases" id="projecta_ttima.menu_cases" parent="projecta_ttima.menu_root"/> 
+        <menuitem name="Menu Cases" id="projecta_ttima.menu_cases" parent="projecta_ttima.menu_root" />
 
 
-    <!--  actions -->
-        <menuitem  name="List" id="projecta_ttima.menu_cases_list" parent="projecta_ttima.menu_cases" action="projecta_ttima.action_cases"/> 
+        <!--  actions -->
+        <menuitem name="List" id="projecta_ttima.menu_cases_list" parent="projecta_ttima.menu_cases"
+            action="projecta_ttima.action_cases" />
 
     </data>
 </odoo>

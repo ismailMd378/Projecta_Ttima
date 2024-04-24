@@ -9,9 +9,9 @@
                 <form string="Persones">
                     <sheet>
                         <group>
-                            <field name="CodiPersona"/>
-                            <field name="Nom"/>
-                            <field name="AnyNaixement"/>
+                            <field name="CodiPersona" />
+                            <field name="Nom" />
+                            <field name="AnyNaixement" />
                         </group>
                     </sheet>
                 </form>
@@ -24,11 +24,33 @@
             <field name="model">projecta_ttima.persones</field>
             <field name="arch" type="xml">
                 <tree string="Persones">
-                    <field name="CodiPersona"/>
-                    <field name="Nom"/>
-                    <field name="AnyNaixement"/>
+                    <field name="CodiPersona" />
+                    <field name="Nom" />
+                    <field name="AnyNaixement" />
                 </tree>
             </field>
         </record>
+
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
+
+
+        <!--  actions opening views on models  -->
+
+        <record model="ir.actions.act_window" id="projecta_ttima.action_persones">
+            <field name="name">projecta_ttima persones</field>
+            <field name="res_model">projecta_ttima.persones</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--  Top menu item  -->
+        <menuitem name="Menu persones" id="projecta_ttima.menu_persones"
+            parent="projecta_ttima.menu_root" />
+
+
+        <!--  actions -->
+        <menuitem name="List" id="projecta_ttima.menu_persones_list"
+            parent="projecta_ttima.menu_persones"
+            action="projecta_ttima.action_persones" />
     </data>
 </odoo>

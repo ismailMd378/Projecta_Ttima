@@ -9,11 +9,11 @@
                 <form string="Habitacions">
                     <sheet>
                         <group>
-                            <field name="CodiHabitacio"/>
-                            <field name="CodiCasa"/>
-                            <field name="Num_llits"/>
-                            <field name="Bany"/>
-                            <field name="Observacions"/>
+                            <field name="CodiHabitacio" />
+                            <field name="CodiCasa" />
+                            <field name="Num_llits" />
+                            <field name="Bany" />
+                            <field name="Observacions" />
                         </group>
                     </sheet>
                 </form>
@@ -26,13 +26,34 @@
             <field name="model">projecta_ttima.habitacions</field>
             <field name="arch" type="xml">
                 <tree string="Habitacions">
-                    <field name="CodiHabitacio"/>
-                    <field name="CodiCasa"/>
-                    <field name="Num_llits"/>
-                    <field name="Bany"/>
-                    <field name="Observacions"/>
+                    <field name="CodiHabitacio" />
+                    <field name="CodiCasa" />
+                    <field name="Num_llits" />
+                    <field name="Bany" />
+                    <field name="Observacions" />
                 </tree>
             </field>
         </record>
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
+
+
+        <!--  actions opening views on models  -->
+
+        <record model="ir.actions.act_window" id="projecta_ttima.action_habitacions">
+            <field name="name">projecta_ttima habitacions</field>
+            <field name="res_model">projecta_ttima.habitacions</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--  Top menu item  -->
+        <menuitem name="Menu habitacions" id="projecta_ttima.menu_habitacions"
+            parent="projecta_ttima.menu_root" />
+
+
+        <!--  actions -->
+        <menuitem name="List" id="projecta_ttima.menu_habitacions_list"
+            parent="projecta_ttima.menu_habitacions"
+            action="projecta_ttima.action_habitacions" />
     </data>
 </odoo>

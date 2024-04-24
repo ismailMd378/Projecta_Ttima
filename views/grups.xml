@@ -9,15 +9,15 @@
                 <form string="Grups">
                     <sheet>
                         <group>
-                            <field name="CodiGrup"/>
-                            <field name="CodiPersonalEnCap"/>
-                            <field name="Adressa"/>
-                            <field name="Poblacion"/>
-                            <field name="CP"/>
-                            <field name="Pais"/>
-                            <field name="Telefons"/>
-                            <field name="Num_Persones"/>
-                            <field name="Observacions"/>
+                            <field name="CodiGrup" />
+                            <field name="CodiPersonalEnCap" />
+                            <field name="Adressa" />
+                            <field name="Poblacion" />
+                            <field name="CP" />
+                            <field name="Pais" />
+                            <field name="Telefons" />
+                            <field name="Num_Persones" />
+                            <field name="Observacions" />
                         </group>
                     </sheet>
                 </form>
@@ -30,17 +30,36 @@
             <field name="model">projecta_ttima.grups</field>
             <field name="arch" type="xml">
                 <tree string="Grups">
-                    <field name="CodiGrup"/>
-                    <field name="CodiPersonalEnCap"/>
-                    <field name="Adressa"/>
-                    <field name="Poblacion"/>
-                    <field name="CP"/>
-                    <field name="Pais"/>
-                    <field name="Telefons"/>
-                    <field name="Num_Persones"/>
-                    <field name="Observacions"/>
+                    <field name="CodiGrup" />
+                    <field name="CodiPersonalEnCap" />
+                    <field name="Adressa" />
+                    <field name="Poblacion" />
+                    <field name="CP" />
+                    <field name="Pais" />
+                    <field name="Telefons" />
+                    <field name="Num_Persones" />
+                    <field name="Observacions" />
                 </tree>
             </field>
         </record>
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
+
+
+        <!--  actions opening views on models  -->
+
+        <record model="ir.actions.act_window" id="projecta_ttima.action_grups">
+            <field name="name">projecta_ttima grups</field>
+            <field name="res_model">projecta_ttima.grups</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--  Top menu item  -->
+        <menuitem name="Menu grups" id="projecta_ttima.menu_grups" parent="projecta_ttima.menu_root" />
+
+
+        <!--  actions -->
+        <menuitem name="List" id="projecta_ttima.menu_grups_list" parent="projecta_ttima.menu_grups"
+            action="projecta_ttima.action_grups" />
     </data>
 </odoo>

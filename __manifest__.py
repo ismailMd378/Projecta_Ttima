@@ -6,7 +6,7 @@
     'description': """
         Descripción detallada del módulo.
     """,
-    'author': 'Autor del Módulo',
+    'author': 'Ismail & Hicham',
     'website': 'URL del Sitio Web',
     'depends': ['base'],
     'data': [
@@ -19,6 +19,7 @@
         'views/grups.xml',
         'views/cases.xml',
         'views/habitacions.xml',
+        'views/passa_per.xml',
     ],
     'demo': [],
     'installable': True,
