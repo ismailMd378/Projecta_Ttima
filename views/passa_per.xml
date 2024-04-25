@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Formulari-->
+        <record id="view_passa_per_form" model="ir.ui.view">
+            <field name="name">passa_per.form</field>
+            <field name="model">projecta_ttima.passa_per</field>
+            <field name="arch" type="xml">
+                <form string="passa_per">
+                    <sheet>
+                        <group>
+                            <field name="CodiRutes" />
+                            <field name="CodiCases" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Arbre -->
+        <record id="view_passa_per_tree" model="ir.ui.view">
+            <field name="name">passa_per.tree</field>
+            <field name="model">projecta_ttima.passa_per</field>
+            <field name="arch" type="xml">
+                <tree string="Caption" create="true" delete="true" edit="true" editable="bottom">
+                    <field name="CodiRutes" />
+                    <field name="CodiCases" />
+                </tree>
+            </field>
+        </record>
+
+        <menuitem id="projecta_ttima.menu_root" name="Menú de Projecta Ttima" />
+
+        <!-- Accions d'obertura de vistes en models -->
+
+        <record id="projecta_ttima.action_passa_per" model="ir.actions.act_window">
+            <field name="name">projecta ttima passa_per</field>
+            <field name="res_model">projecta_ttima.passa_per</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Element de menú superior-->
+        <menuitem name="Menú passa_per" id="projecta_ttima.menu_passa_per"
+            parent="projecta_ttima.menu_root" />
+
+        <!-- Accions -->
+        <menuitem name="Llista" id="projecta_ttima.menu_passa_per_list"
+            parent="projecta_ttima.menu_passa_per"
+            action="projecta_ttima.action_passa_per" />
+    </data>
+</odoo>
