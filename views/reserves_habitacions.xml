@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Formulari-->
+        <record id="view_reserves_habitacions_form" model="ir.ui.view">
+            <field name="name">reserves_habitacions.form</field>
+            <field name="model">projecta_ttima.reserves_habitacions</field>
+            <field name="arch" type="xml">
+                <form string="reserves_habitacions">
+                    <sheet>
+                        <group>
+                            <field name="CodiReserva" />
+                            <field name="CodiHabitacio" />
+                            <field name="DataConfirmacio"/>
+                            <field name="DataAribada"/>
+                            <field name="DataSortida"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Arbre -->
+        <record id="view_reserves_habitacions_tree" model="ir.ui.view">
+            <field name="name">reserves_habitacions.tree</field>
+            <field name="model">projecta_ttima.reserves_habitacions</field>
+            <field name="arch" type="xml">
+                <tree string="Caption" create="true" delete="true" edit="true" editable="bottom">
+                    <field name="CodiReserva" />
+                    <field name="CodiHabitacio" />
+                    <field name="DataConfirmacio"/>
+                    <field name="DataAribada"/>
+                    <field name="DataSortida"/>
+                </tree>
+            </field>
+        </record>
+
+        <menuitem id="projecta_ttima.menu_root" name="Menú de Projecta Ttima" />
+
+        <!-- Accions d'obertura de vistes en models -->
+
+        <record id="projecta_ttima.action_reserves_habitacions" model="ir.actions.act_window">
+            <field name="name">projecta ttima reserves_habitacions</field>
+            <field name="res_model">projecta_ttima.reserves_habitacions</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Element de menú superior-->
+        <menuitem name="Menú reserves_habitacions" id="projecta_ttima.menu_reserves_habitacions"
+            parent="projecta_ttima.menu_root" />
+
+        <!-- Accions -->
+        <menuitem name="Llista" id="projecta_ttima.menu_reserves_habitacions_list"
+            parent="projecta_ttima.menu_reserves_habitacions"
+            action="projecta_ttima.action_reserves_habitacions" />
+    </data>
+</odoo>

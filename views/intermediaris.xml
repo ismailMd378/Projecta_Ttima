@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
         <!-- Formulario -->
@@ -9,14 +8,14 @@
                 <form string="Intermediaris">
                     <sheet>
                         <group>
-                            <field name="CodiIntermediaris" />
-                            <field name="Nom" />
-                            <field name="Adressa" />
-                            <field name="Poblacio" />
-                            <field name="CP" />
-                            <field name="Pais" />
-                            <field name="Telefons" />
-                            <field name="PersonaContacte" />
+                            <field name="CodiIntermediaris" placeholder="Código de Intermediario" class="o_field_char o_field_widget o_input"/>
+                            <field name="Nom" placeholder="Nombre" class="o_field_char o_field_widget o_input"/>
+                            <field name="Adressa" placeholder="Dirección" class="o_field_char o_field_widget o_input"/>
+                            <field name="Poblacio" placeholder="Población" class="o_field_char o_field_widget o_input"/>
+                            <field name="CP" placeholder="Código Postal" class="o_field_char o_field_widget o_input"/>
+                            <field name="Pais" placeholder="País" class="o_field_char o_field_widget o_input"/>
+                            <field name="Telefons" placeholder="Teléfonos" class="o_field_char o_field_widget o_input"/>
+                            <field name="PersonaContacte" placeholder="Persona de Contacto" class="o_field_char o_field_widget o_input"/>
                         </group>
                     </sheet>
                 </form>
@@ -29,37 +28,33 @@
             <field name="model">projecta_ttima.intermediaris</field>
             <field name="arch" type="xml">
                 <tree string="Intermediaris">
-                    <field name="CodiIntermediaris" />
-                    <field name="Nom" />
-                    <field name="Adressa" />
-                    <field name="Poblacio" />
-                    <field name="CP" />
-                    <field name="Pais" />
-                    <field name="Telefons" />
-                    <field name="PersonaContacte" />
+                    <field name="CodiIntermediaris"/>
+                    <field name="Nom"/>
+                    <field name="Adressa"/>
+                    <field name="Poblacio"/>
+                    <field name="CP"/>
+                    <field name="Pais"/>
+                    <field name="Telefons"/>
+                    <field name="PersonaContacte"/>
                 </tree>
             </field>
         </record>
-        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
-
-        <!--  actions opening views on models  -->
-
+        <!-- Acción para abrir vistas -->
         <record model="ir.actions.act_window" id="projecta_ttima.action_intermediaris">
-            <field name="name">projecta_ttima intermediaris</field>
+            <field name="name">Intermediarios de Projecta Ttima</field>
             <field name="res_model">projecta_ttima.intermediaris</field>
             <field name="view_mode">tree,form</field>
         </record>
 
+        <!-- Elementos del menú -->
+        <menuitem id="projecta_ttima.menu_root" name="Menú de Projecta Ttima"/>
 
-        <!--  Top menu item  -->
-        <menuitem name="Menu Intermediaris" id="projecta_ttima.menu_intermediaris"
-            parent="projecta_ttima.menu_root" />
+        <menuitem name="Menú Intermediarios" id="projecta_ttima.menu_intermediaris"
+            parent="projecta_ttima.menu_root"/>
 
-
-        <!--  actions -->
-        <menuitem name="List" id="projecta_ttima.menu_intermediaris_list"
+        <menuitem name="Lista" id="projecta_ttima.menu_intermediaris_list"
             parent="projecta_ttima.menu_intermediaris"
-            action="projecta_ttima.action_intermediaris" />
+            action="projecta_ttima.action_intermediaris"/>
     </data>
 </odoo>

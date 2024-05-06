@@ -20,6 +20,7 @@
         'views/cases.xml',
         'views/habitacions.xml',
         'views/passa_per.xml',
+        'views/reserves_habitacions.xml'
     ],
     'demo': [],
     'installable': True,
