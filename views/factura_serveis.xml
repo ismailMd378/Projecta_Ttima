@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Formulario -->
+
+        <record id="view_factura_serveis_form" model="ir.ui.view">
+            <field name="name">factura_serveis.form</field>
+            <field name="model">projecta_ttima.factura_serveis</field>
+            <field name="arch" type="xml">
+                <form string="factura_serveis">
+                    <sheet>
+                        <group>
+                            <field name="CodiFacturaFinalServeis" />
+                            <field name="CodiIntermediaris" />
+                            <field name="Description" />
+                            <field name="Data" />
+                            <field name="TotalSuplert" />
+                            <field name="TotalPagar" />
+                            <field name="DataPagar" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Árbol -->
+        <record id="view_factura_serveis_tree" model="ir.ui.view">
+            <field name="name">factura_serveis.tree</field>
+            <field name="model">projecta_ttima.factura_serveis</field>
+            <field name="arch" type="xml">
+                <tree string="factura_serveis">
+                    <field name="CodiFacturaFinalServeis" />
+                    <field name="CodiIntermediaris" />
+                    <field name="Description" />
+                    <field name="Data" />
+                    <field name="TotalSuplert" />
+                    <field name="TotalPagar" />
+                    <field name="DataPagar" />
+                </tree>
+            </field>
+        </record>
+
+
+        <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
+
+
+        <!--  actions opening views on models  -->
+
+        <record model="ir.actions.act_window" id="projecta_ttima.action_factura_serveis">
+            <field name="name">projecta_ttima factura_serveis</field>
+            <field name="res_model">projecta_ttima.factura_serveis</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--  Top menu item  -->
+        <menuitem name="Menu factura_serveis" id="projecta_ttima.menu_factura_serveis"
+            parent="projecta_ttima.menu_root" />
+
+
+        <!--  actions -->
+        <menuitem name="List" id="projecta_ttima.menu_factura_serveis_list"
+            parent="projecta_ttima.menu_factura_serveis"
+            action="projecta_ttima.action_factura_serveis" />
+    </data>
+</odoo>

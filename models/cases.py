@@ -7,7 +7,7 @@ class Cases(models.Model):
     CodiCases = fields.Many2many(
         string='Codi Cases',
         comodel_name='projecta_ttima.cases',
-        relation='projecta_ttima_cases_rutes_rel',
+        relation='projecta_ttima_passa_per_rel',
         column1='CodiRutes',
         column2='CodiCases')   
     NIF = fields.Char('Codi Persona', size=9)

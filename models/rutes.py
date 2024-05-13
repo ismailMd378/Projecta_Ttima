@@ -7,7 +7,7 @@ class Rutes(models.Model):
     CodiRutes = fields.Many2many(
         string='Codi Rutes',
         comodel_name='projecta_ttima.rutes',
-        relation='projecta_ttima_cases_rutes_rel',
+        relation='projecta_ttima_passa_per_rel',
         column1='CodiCases',
         column2='CodiRutes')
     Nom = fields.Char('Nom')

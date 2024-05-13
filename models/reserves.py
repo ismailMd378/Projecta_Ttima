@@ -4,7 +4,13 @@ class Reserves(models.Model):
     _name = 'projecta_ttima.reserves'
     _description = 'Taula de Reserves'
      
-    CodiReserva = fields.Char('Codi Reserva', size=7, required=True)
+    CodiReserva = fields.Many2many(
+        string='CodiReserva',
+        comodel_name='projecta_ttima.reserves',
+        relation='reserves_habitacions_rel',
+        column1='CodiHabitacio',
+        column2='CodiReserva',
+    )
     DataArrivada = fields.Date('Data Arribada')
     NitExtra = fields.Boolean('Nit Extra')
     Num_Bicis = fields.Integer('Num De Bicis')
