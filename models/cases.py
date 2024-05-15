@@ -4,12 +4,9 @@ class Cases(models.Model):
     _name = 'projecta_ttima.cases'
     _description ='Taula de cases'
 
-    CodiCases = fields.Many2many(
-        string='Codi Cases',
-        comodel_name='projecta_ttima.cases',
-        relation='projecta_ttima_passa_per_rel',
-        column1='CodiRutes',
-        column2='CodiCases')   
+  
+
+    
     NIF = fields.Char('Codi Persona', size=9)
     NomCasa = fields.Char('Nom', size=50)
     NomPersona = fields.Char('Nom de Persona', size=50)

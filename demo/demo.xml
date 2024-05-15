@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+
+          <record id="0001" model="projecta_ttima.reserves">
+            <field name="CodiReserva">Banyoles</field>
+            <field name="DataArrivada">10-04-2024</field>
+	    <field name="NitExtra">Si</field>
+            <field name="DataReserva">01-04-2024</field>
+          </record>
+
+ 	  <record id="0002" model="projecta_ttima.reserves">
+            <field name="CodiReserva">Besalu</field>
+            <field name="DataArrivada">12-04-2024</field>
+	    <field name="NitExtra">Si</field>
+            <field name="DataReserva">01-04-2024</field>
+          </record>
+<!-- Intermediari Clients -->
+	  <record id="0001" model="projecta_ttima.intermediaris">
+            <field name="CodiIntermediaris">1000Jep</field>
+            <field name="Nom">Jep</field>
+	    <field name="Adressa">Si</field>
+            <field name="Poblacio">Girona</field>
+	    <field name="CP">17017</field>
+            <field name="Pais">Espanya</field>
+	    <field name="Telefons">632 00 00 00 </field>
+            <field name="PersonaContacte">Jauma</field>
+          </record>
+
+ 	  <record id="0002" model="projecta_ttima.intermediaris">
+            <field name="CodiIntermediaris">1001Hic</field>
+            <field name="Nom">Hicham</field>
+	    <field name="Adressa">Av.Paisos Catalans</field>
+            <field name="Poblacio">Banyoles</field>
+	    <field name="CP">17820</field>
+            <field name="Pais">Espanya</field>
+	    <field name="Telefons">632 00 00 00 </field>
+            <field name="PersonaContacte">Ismail</field>
+          </record>
+
+
+    </data>
+</odoo>

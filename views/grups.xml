@@ -12,7 +12,7 @@
                             <field name="CodiGrup" />
                             <field name="CodiPersonalEnCap" />
                             <field name="Adressa" />
-                            <field name="Poblacion" />
+                            <field name="Poblacio" />
                             <field name="CP" />
                             <field name="Pais" />
                             <field name="Telefons" />
@@ -33,7 +33,7 @@
                     <field name="CodiGrup" />
                     <field name="CodiPersonalEnCap" />
                     <field name="Adressa" />
-                    <field name="Poblacion" />
+                    <field name="Poblacio" />
                     <field name="CP" />
                     <field name="Pais" />
                     <field name="Telefons" />

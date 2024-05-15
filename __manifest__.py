@@ -24,7 +24,7 @@
         'views/factura_serveis.xml'
     ],
     'demo': [
-        #demo/testDades.xml
+        'demo/demo.xml'
         ],
     'installable': True,
     'auto_install': True,

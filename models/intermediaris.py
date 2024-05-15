@@ -4,13 +4,18 @@ class Intermediaris(models.Model):
     _name = 'projecta_ttima.intermediaris'
     _description = 'Taula d\'Intermediaris'
 
-    CodiIntermediaris = fields.Char(
-        string='Codi Intermediaris',
+   
+    intermediaris_ids = fields.Many2many(
+        string='Id.Intermediaris',
+        comodel_name='projecta_ttima.grups',
+        relation='Intermediaris_Grups_rel',
+        column1='Id',
+        column2='Id_intermediaris',
     )
     
     CodiFacturaFinalServeis = fields.One2many(
         'projecta_ttima.factura_serveis',
-        'CodiIntermediaris',
+        'Id',
         string='Factures de Serveis'
     )
     Nom = fields.Char('Nom', size=50)

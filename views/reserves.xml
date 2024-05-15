@@ -2,19 +2,18 @@
     <data>
 
         <!-- Vista de listado -->
-        <record model="ir.ui.view" id="projecta_ttima_reserves_list"> 
+        <record model="ir.ui.view" id="projecta_ttima_reserves_list">
             <field name="name">projecta_ttima reserves list</field>
             <field name="model">projecta_ttima.reserves</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="CodiReserva"/>
-                    <field name="DataArrivada"/>
-                    <field name="NitExtra"/>
-                    <field name="Num_Bicis"/>
-                    <field name="DataReserva"/>
-                    <field name="CodiIntermediaris"/>
-                    <field name="CodiGrup"/>
-                    <field name="CodiRutes"/>
+                    <field name="CodiReserva" />
+                    <field name="DataArrivada" />
+                    <field name="NitExtra" />
+                    <field name="DataReserva" />
+                    <field name="CodiIntermediaris" />
+                    <field name="CodiGrup" />
+                    <field name="CodiRutes" />
                 </tree>
             </field>
         </record>
@@ -24,17 +23,18 @@
             <field name="name">projecta_ttima reserves calendar</field>
             <field name="model">projecta_ttima.reserves</field>
             <field name="arch" type="xml">
-                <calendar string="Reserves Calendar" date_start="DataArrivada" date_stop="DataReserva">
-                    <field name="CodiReserva"/>
-                    <field name="DataArrivada"/>
-                    <field name="DataReserva"/>
+                <calendar string="Reserves Calendar" date_start="DataArrivada"
+                    date_stop="DataReserva">
+                    <field name="CodiReserva" />
+                    <field name="DataArrivada" />
+                    <field name="DataReserva" />
                 </calendar>
             </field>
         </record>
 
         <!-- Acción para abrir la vista de lista -->
         <record model="ir.actions.act_window" id="projecta_ttima.action_reserves_list">
-            <field name="name">projecta_ttima Reserves</field>    
+            <field name="name">projecta_ttima Reserves</field>
             <field name="res_model">projecta_ttima.reserves</field>
             <field name="view_mode">tree,form</field>
         </record>
@@ -50,9 +50,12 @@
         <menuitem id="projecta_ttima.menu_root" name="Projecta Ttima Menu" />
 
         <!-- Menús -->
-        <menuitem name="Menu Reserves" id="projecta_ttima.menu_reserves" parent="projecta_ttima.menu_root"/> 
-        <menuitem name="Calendar" id="projecta_ttima.menu_reserves_calendar" parent="projecta_ttima.menu_reserves" action="projecta_ttima.action_reserves_calendar"/>
-        <menuitem name="List" id="projecta_ttima.menu_reserves_list" parent="projecta_ttima.menu_reserves" action="projecta_ttima.action_reserves_list"/> 
+        <menuitem name="Menu Reserves" id="projecta_ttima.menu_reserves"
+            parent="projecta_ttima.menu_root" />
+        <menuitem name="Calendar" id="projecta_ttima.menu_reserves_calendar"
+            parent="projecta_ttima.menu_reserves" action="projecta_ttima.action_reserves_calendar" />
+        <menuitem name="List" id="projecta_ttima.menu_reserves_list"
+            parent="projecta_ttima.menu_reserves" action="projecta_ttima.action_reserves_list" />
 
     </data>
 </odoo>
