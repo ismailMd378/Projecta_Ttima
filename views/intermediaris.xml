@@ -8,7 +8,7 @@
                 <form string="Intermediaris">
                     <sheet>
                         <group>
-                            <field name="CodiIntermediaris" placeholder="Código de Intermediario" class="o_field_char o_field_widget o_input"/>
+                            <field name="id" invisible="1"/>
                             <field name="Nom" placeholder="Nombre" class="o_field_char o_field_widget o_input"/>
                             <field name="Adressa" placeholder="Dirección" class="o_field_char o_field_widget o_input"/>
                             <field name="Poblacio" placeholder="Población" class="o_field_char o_field_widget o_input"/>
@@ -28,7 +28,7 @@
             <field name="model">projecta_ttima.intermediaris</field>
             <field name="arch" type="xml">
                 <tree string="Intermediaris">
-                    <field name="CodiIntermediaris"/>
+                    <field name="id"/>
                     <field name="Nom"/>
                     <field name="Adressa"/>
                     <field name="Poblacio"/>

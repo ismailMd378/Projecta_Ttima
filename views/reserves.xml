@@ -7,14 +7,15 @@
             <field name="model">projecta_ttima.reserves</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="CodiReserva"/>
+                    <field name="id"/>
+                    <field name="reserves_ids"/>
                     <field name="DataArrivada"/>
                     <field name="NitExtra"/>
                     <field name="Num_Bicis"/>
                     <field name="DataReserva"/>
-                    <field name="CodiIntermediaris"/>
-                    <field name="CodiGrup"/>
-                    <field name="CodiRutes"/>
+                    <field name="intermediaris_id"/>
+                    <field name="grups_id"/>
+                    <field name="rutes_id"/>
                 </tree>
             </field>
         </record>
@@ -25,7 +26,6 @@
             <field name="model">projecta_ttima.reserves</field>
             <field name="arch" type="xml">
                 <calendar string="Reserves Calendar" date_start="DataArrivada" date_stop="DataReserva">
-                    <field name="CodiReserva"/>
                     <field name="DataArrivada"/>
                     <field name="DataReserva"/>
                 </calendar>

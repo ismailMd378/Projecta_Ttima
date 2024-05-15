@@ -10,7 +10,8 @@
                 <form string="factura_serveis">
                     <sheet>
                         <group>
-                            <field name="CodiIntermediaris" />
+                            <field name="id" invisible="1"/>
+                            <field name="intermediaris_id" />
                             <field name="Description" />
                             <field name="Data" />
                             <field name="TotalSuplert" />
@@ -27,8 +28,9 @@
             <field name="name">factura_serveis.tree</field>
             <field name="model">projecta_ttima.factura_serveis</field>
             <field name="arch" type="xml">
-                <tree string="factura_serveis">
-                    <field name="CodiIntermediaris" />
+                <tree>
+                    <field name="id"/>
+                    <field name="intermediaris_id" />
                     <field name="Description" />
                     <field name="Data" />
                     <field name="TotalSuplert" />

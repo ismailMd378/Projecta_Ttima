@@ -9,6 +9,7 @@
                 <form string="Cases">
                     <sheet>
                         <group>
+                            <field name="id" readonly="1"/>
                             <field name="NIF" />
                             <field name="NomCasa" />
                             <field name="NomPersona" />
@@ -29,6 +30,7 @@
             <field name="model">projecta_ttima.cases</field>
             <field name="arch" type="xml">
                 <tree string="Cases">
+                    <field name="id"/>
                     <field name="NIF" />
                     <field name="NomCasa" />
                     <field name="NomPersona" />

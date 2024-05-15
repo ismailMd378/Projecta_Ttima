@@ -9,7 +9,7 @@
                 <form string="Rutes">
                     <sheet>
                         <group>
-                            <field name="CodiRutes" />
+                            <field name="id" invisible="1"/>
                             <field name="Nom" />
                             <field name="Preu" />
                         </group>
@@ -24,7 +24,7 @@
             <field name="model">projecta_ttima.rutes</field>
             <field name="arch" type="xml">
                 <tree string="Rutes">
-                    <field name="CodiRutes" />
+                    <field name="id"/>
                     <field name="Nom" />
                     <field name="Preu" />
                 </tree>
