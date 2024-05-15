@@ -10,5 +10,7 @@ class Rutes(models.Model):
         relation='projecta_ttima_passa_per_rel',
         column1='CodiCases',
         column2='CodiRutes')
+    
+    
     Nom = fields.Char('Nom')
     Preu = fields.Integer('Preu')

@@ -10,7 +10,6 @@
                 <form string="factura_serveis">
                     <sheet>
                         <group>
-                            <field name="CodiFacturaFinalServeis" />
                             <field name="CodiIntermediaris" />
                             <field name="Description" />
                             <field name="Data" />
@@ -29,7 +28,6 @@
             <field name="model">projecta_ttima.factura_serveis</field>
             <field name="arch" type="xml">
                 <tree string="factura_serveis">
-                    <field name="CodiFacturaFinalServeis" />
                     <field name="CodiIntermediaris" />
                     <field name="Description" />
                     <field name="Data" />

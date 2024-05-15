@@ -9,7 +9,7 @@
                 <form string="Habitacions">
                     <sheet>
                         <group>
-                            <field name="CodiHabitacio" />
+                            <field name="CodiHabitacio"/>
                             <field name="CodiCasa" />
                             <field name="Num_llits" />
                             <field name="Bany" />
@@ -26,7 +26,7 @@
             <field name="model">projecta_ttima.habitacions</field>
             <field name="arch" type="xml">
                 <tree string="Habitacions">
-                    <field name="CodiHabitacio" />
+                    <field name="CodiHabitacio"/>
                     <field name="CodiCasa" />
                     <field name="Num_llits" />
                     <field name="Bany" />

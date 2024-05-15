@@ -4,14 +4,12 @@ class factura_serveis(models.Model):
     _name = 'projecta_ttima.factura_serveis'
     _description ='Taula Factura de Serveis'
     
-    CodiFacturaFinalServeis = fields.Integer(
-        string='Codi Factura Final de Serveis',
-    )
+
     
-    CodiIntermediaris = fields.Many2one(
+    intermediaris_id = fields.Many2one(
         'projecta_ttima.intermediaris',
-        string='Codi Intermediaris',
-        inverse_name='CodiFacturaFinalServeis'
+        string='intermediaris_id',
+        inverse_name='factura_serveis_id'
         )
     Description =  fields.Char(string='Descripció')
     Data = fields.Date(
