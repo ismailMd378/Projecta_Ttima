@@ -9,8 +9,8 @@
                 <form string="Grups">
                     <sheet>
                         <group>
-                            <field name="CodiGrup" />
-                            <field name="CodiPersonalEnCap" />
+                            <field name="id" invisible="1"/>    
+                            <field name="persones_id" />
                             <field name="Adressa" />
                             <field name="Poblacion" />
                             <field name="CP" />
@@ -30,8 +30,8 @@
             <field name="model">projecta_ttima.grups</field>
             <field name="arch" type="xml">
                 <tree string="Grups">
-                    <field name="CodiGrup" />
-                    <field name="CodiPersonalEnCap" />
+                    <field name="id"/>
+                    <field name="persones_id" />
                     <field name="Adressa" />
                     <field name="Poblacion" />
                     <field name="CP" />

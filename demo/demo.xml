@@ -1,0 +1,199 @@
+<odoo>
+    <data>
+
+        <!-- Datos de Cases -->
+        <record model="projecta_ttima.cases" id="cases_demo_1">
+            <field name="NIF">123456789</field>
+            <field name="NomCasa">Casa A</field>
+            <field name="NomPersona">Persona 1</field>
+            <field name="NomPersona2">Persona 2</field>
+            <field name="Telefons">987654321</field>
+            <field name="cc">123</field>
+            <field name="Ubicacio">Ubicación A</field>
+            <field name="Adressa">Calle Mayor, 123</field>
+        </record>
+
+        <record model="projecta_ttima.cases" id="cases_demo_2">
+            <field name="NIF">987654321</field>
+            <field name="NomCasa">Casa B</field>
+            <field name="NomPersona">Persona 3</field>
+            <field name="NomPersona2">Persona 4</field>
+            <field name="Telefons">123456789</field>
+            <field name="cc">456</field>
+            <field name="Ubicacio">Ubicación B</field>
+            <field name="Adressa">Calle Principal, 456</field>
+        </record>
+
+        <record model="projecta_ttima.cases" id="cases_demo_3">
+            <field name="NIF">987123456</field>
+            <field name="NomCasa">Casa C</field>
+            <field name="NomPersona">Persona 5</field>
+            <field name="NomPersona2">Persona 6</field>
+            <field name="Telefons">456123789</field>
+            <field name="cc">789</field>
+            <field name="Ubicacio">Ubicación C</field>
+            <field name="Adressa">Calle Secundaria, 789</field>
+        </record>
+
+        <!-- Datos de Factura de Serveis -->
+        <record model="projecta_ttima.factura_serveis" id="factura_serveis_demo_1">
+            <field name="Description">Descripción 1</field>
+            <field name="Data">2024-05-15</field>
+            <field name="TotalSuplert">100</field>
+            <field name="TotalPagar">200</field>
+            <field name="DataPagar">2024-05-20</field>
+        </record>
+
+        <record model="projecta_ttima.factura_serveis" id="factura_serveis_demo_2">
+            <field name="Description">Descripción 2</field>
+            <field name="Data">2024-05-16</field>
+            <field name="TotalSuplert">150</field>
+            <field name="TotalPagar">250</field>
+            <field name="DataPagar">2024-05-21</field>
+        </record>
+
+        <record model="projecta_ttima.factura_serveis" id="factura_serveis_demo_3">
+            <field name="Description">Descripción 3</field>
+            <field name="Data">2024-05-17</field>
+            <field name="TotalSuplert">200</field>
+            <field name="TotalPagar">300</field>
+            <field name="DataPagar">2024-05-22</field>
+        </record>
+
+        <!-- Datos de Grups -->
+        <record model="projecta_ttima.grups" id="grups_demo_1">
+            <field name="Adressa">Dirección 1</field>
+            <field name="Poblacion">Población 1</field>
+            <field name="CP">12345</field>
+            <field name="Pais">País 1</field>
+            <field name="Telefons">111222333</field>
+            <field name="Num_Persones">5</field>
+            <field name="Observacions">Observaciones 1</field>
+        </record>
+
+        <record model="projecta_ttima.grups" id="grups_demo_2">
+            <field name="Adressa">Dirección 2</field>
+            <field name="Poblacion">Población 2</field>
+            <field name="CP">54321</field>
+            <field name="Pais">País 2</field>
+            <field name="Telefons">333222111</field>
+            <field name="Num_Persones">10</field>
+            <field name="Observacions">Observaciones 2</field>
+        </record>
+
+        <record model="projecta_ttima.grups" id="grups_demo_3">
+            <field name="Adressa">Dirección 3</field>
+            <field name="Poblacion">Población 3</field>
+            <field name="CP">67890</field>
+            <field name="Pais">País 3</field>
+            <field name="Telefons">444555666</field>
+            <field name="Num_Persones">8</field>
+            <field name="Observacions">Observaciones 3</field>
+        </record>
+
+        <!-- Datos de Habitacions -->
+        <record model="projecta_ttima.habitacions" id="habitacions_demo_1">
+            <field name="Num_llits">2</field>
+            <field name="Bany">True</field>
+            <field name="Observacions">Observaciones Habitación 1</field>
+        </record>
+
+        <record model="projecta_ttima.habitacions" id="habitacions_demo_2">
+            <field name="Num_llits">3</field>
+            <field name="Bany">False</field>
+            <field name="Observacions">Observaciones Habitación 2</field>
+        </record>
+
+        <record model="projecta_ttima.habitacions" id="habitacions_demo_3">
+            <field name="Num_llits">4</field>
+            <field name="Bany">True</field>
+            <field name="Observacions">Observaciones Habitación 3</field>
+        </record>
+
+        <!-- Datos de Intermediaris -->
+        <record model="projecta_ttima.intermediaris" id="intermediaris_demo_1">
+            <field name="Nom">Intermediario 1</field>
+            <field name="Adressa">Dirección Intermediario 1</field>
+            <field name="Poblacio">Población Intermediario 1</field>
+            <field name="CP">54321</field>
+            <field name="Pais">País Intermediario 1</field>
+            <field name="Telefons">111222333</field>
+            <field name="PersonaContacte">Contacto Intermediario 1</field>
+        </record>
+
+        <record model="projecta_ttima.intermediaris" id="intermediaris_demo_2">
+            <field name="Nom">Intermediario 2</field>
+            <field name="Adressa">Dirección Intermediario 2</field>
+            <field name="Poblacio">Población Intermediario 2</field>
+            <field name="CP">67890</field>
+            <field name="Pais">País Intermediario 2</field>
+            <field name="Telefons">333444555</field>
+            <field name="PersonaContacte">Contacto Intermediario 2</field>
+        </record>
+
+        <record model="projecta_ttima.intermediaris" id="intermediaris_demo_3">
+            <field name="Nom">Intermediario 3</field>
+            <field name="Adressa">Dirección Intermediario 3</field>
+            <field name="Poblacio">Población Intermediario 3</field>
+            <field name="CP">13579</field>
+            <field name="Pais">País Intermediario 3</field>
+            <field name="Telefons">999888777</field>
+            <field name="PersonaContacte">Contacto Intermediario 3</field>
+        </record>
+
+        <!-- Datos de Persones -->
+        <record model="projecta_ttima.persones" id="persones_demo_1">
+            <field name="Nom">Persona 1</field>
+            <field name="AnyNaixement">1990</field>
+        </record>
+
+        <record model="projecta_ttima.persones" id="persones_demo_2">
+            <field name="Nom">Persona 2</field>
+            <field name="AnyNaixement">1985</field>
+        </record>
+
+        <record model="projecta_ttima.persones" id="persones_demo_3">
+            <field name="Nom">Persona 3</field>
+            <field name="AnyNaixement">2000</field>
+        </record>
+
+        <!-- Datos de Reserves -->
+        <record model="projecta_ttima.reserves" id="reserves_demo_1">
+            <field name="DataArrivada">2024-05-15</field>
+            <field name="NitExtra">True</field>
+            <field name="Num_Bicis">2</field>
+            <field name="DataReserva">2024-05-10</field>
+        </record>
+
+        <record model="projecta_ttima.reserves" id="reserves_demo_2">
+            <field name="DataArrivada">2024-05-16</field>
+            <field name="NitExtra">False</field>
+            <field name="Num_Bicis">3</field>
+            <field name="DataReserva">2024-05-11</field>
+        </record>
+
+        <record model="projecta_ttima.reserves" id="reserves_demo_3">
+            <field name="DataArrivada">2024-05-17</field>
+            <field name="NitExtra">True</field>
+            <field name="Num_Bicis">4</field>
+            <field name="DataReserva">2024-05-12</field>
+        </record>
+
+        <!-- Datos de Rutes -->
+        <record model="projecta_ttima.rutes" id="rutes_demo_1">
+            <field name="Nom">Ruta 1</field>
+            <field name="Preu">50</field>
+        </record>
+
+        <record model="projecta_ttima.rutes" id="rutes_demo_2">
+            <field name="Nom">Ruta 2</field>
+            <field name="Preu">100</field>
+        </record>
+
+        <record model="projecta_ttima.rutes" id="rutes_demo_3">
+            <field name="Nom">Ruta 3</field>
+            <field name="Preu">75</field>
+        </record>
+
+    </data>
+</odoo>

@@ -9,7 +9,7 @@
                 <form string="Cases">
                     <sheet>
                         <group>
-                            <field name="CodiCases" />
+                            <field name="id" readonly="1"/>
                             <field name="NIF" />
                             <field name="NomCasa" />
                             <field name="NomPersona" />
@@ -25,12 +25,12 @@
         </record>
 
         <!-- Árbol -->
-        <record id="view_cases_tree" model="ir.ui.view">
+         <record id="view_cases_tree" model="ir.ui.view">
             <field name="name">cases.tree</field>
             <field name="model">projecta_ttima.cases</field>
             <field name="arch" type="xml">
                 <tree string="Cases">
-                    <field name="CodiCases" />
+                    <field name="id"/>
                     <field name="NIF" />
                     <field name="NomCasa" />
                     <field name="NomPersona" />

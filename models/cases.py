@@ -2,14 +2,9 @@ from odoo import models, fields
 
 class Cases(models.Model):
     _name = 'projecta_ttima.cases'
-    _description ='Taula de cases'
+    _description = 'Taula de cases'
 
-    CodiCases = fields.Many2many(
-        string='Codi Cases',
-        comodel_name='projecta_ttima.cases',
-        relation='projecta_ttima_cases_rutes_rel',
-        column1='CodiRutes',
-        column2='CodiCases')   
+    id = fields.Integer('ID', readonly=True)
     NIF = fields.Char('Codi Persona', size=9)
     NomCasa = fields.Char('Nom', size=50)
     NomPersona = fields.Char('Nom de Persona', size=50)

@@ -6,4 +6,4 @@ access_projecta_ttima_grups,projecta_ttima.grups,model_projecta_ttima_grups,base
 access_projecta_ttima_cases,projecta_ttima.cases,model_projecta_ttima_cases,base.group_user,1,1,1,1
 access_projecta_ttima_habitacions,projecta_ttima.habitacions,model_projecta_ttima_habitacions,base.group_user,1,1,1,1
 access_projecta_ttima_rutes,projecta_ttima.rutes,model_projecta_ttima_rutes,base.group_user,1,1,1,1
-access_projecta_ttima_passa_per,projecta_ttima.passa_per,model_projecta_ttima_passa_per,base.group_user,1,1,1,1
+access_projecta_ttima_factura_serveis,projecta_ttima.factura_serveis,model_projecta_ttima_factura_serveis,base.group_user,1,1,1,1

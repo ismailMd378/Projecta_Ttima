@@ -19,9 +19,11 @@
         'views/grups.xml',
         'views/cases.xml',
         'views/habitacions.xml',
-        'views/passa_per.xml',
+        'views/factura_serveis.xml'
     ],
-    'demo': [],
+    'demo': [
+        'demo/demo.xml'
+        ],
     'installable': True,
     'auto_install': True,
     'application': True,
