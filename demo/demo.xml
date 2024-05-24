@@ -159,21 +159,21 @@
 
         <!-- Datos de Reserves -->
         <record model="projecta_ttima.reserves" id="reserves_demo_1">
-            <field name="DataArrivada">2024-05-15</field>
+            <field name="DataArribada">2024-05-15</field>
             <field name="NitExtra">True</field>
             <field name="Num_Bicis">2</field>
             <field name="DataReserva">2024-05-10</field>
         </record>
 
         <record model="projecta_ttima.reserves" id="reserves_demo_2">
-            <field name="DataArrivada">2024-05-16</field>
+            <field name="DataArribada">2024-05-16</field>
             <field name="NitExtra">False</field>
             <field name="Num_Bicis">3</field>
             <field name="DataReserva">2024-05-11</field>
         </record>
 
         <record model="projecta_ttima.reserves" id="reserves_demo_3">
-            <field name="DataArrivada">2024-05-17</field>
+            <field name="DataArribada">2024-05-17</field>
             <field name="NitExtra">True</field>
             <field name="Num_Bicis">4</field>
             <field name="DataReserva">2024-05-12</field>

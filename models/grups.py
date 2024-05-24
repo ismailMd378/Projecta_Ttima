@@ -4,8 +4,8 @@ class Grups(models.Model):
     _name = 'projecta_ttima.grups'
     _description = 'Taula de Grups'
     
-    id = fields.Integer(string='ID', readonly=True)
-    persones_id = fields.Many2one('projecta_ttima.persones', string='persona_id')
+    #id = fields.Integer(string='ID', readonly=True)
+    persones_id = fields.Many2one('projecta_ttima.persones', string='CAP GRUP')
     Adressa = fields.Char('Adressa', size=50)
     Poblacion = fields.Char('Poblacion', size=30)
     CP = fields.Char('Codi Postal', size=5)

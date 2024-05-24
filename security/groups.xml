@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Crea un nou grup de seguretat per als usuaris de Campanes -->
+        <record id="group_projecta_ttima_user" model="res.groups">
+            <field name="name">User Ttima</field>
+        </record>
+    </data>
+    <data noupdate="0">
+        <!-- Crea un nou grup de seguretat per als administradors de Campanes -->
+        <record id="group_projecta_ttima_admin" model="res.groups">
+            <field name="name">Admin Ttima</field>
+        </record>
+    </data>
+</odoo>

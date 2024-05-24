@@ -4,7 +4,7 @@ class factura_serveis(models.Model):
     _name = 'projecta_ttima.factura_serveis'
     _description ='Taula Factura de Serveis'
 
-    id = fields.Integer(string='ID', readonly=True)
+    #id = fields.Integer(string='ID', readonly=True)
     intermediaris_id = fields.Many2one(
         'projecta_ttima.intermediaris',
         string='Intermediaris',

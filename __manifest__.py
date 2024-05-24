@@ -11,6 +11,7 @@
     'depends': ['base'],
     'data': [
         # Lista de archivos de datos
+        'security/groups.xml',
         'security/ir.model.access.csv',
         'views/persones.xml',
         'views/reserves.xml',
@@ -19,7 +20,8 @@
         'views/grups.xml',
         'views/cases.xml',
         'views/habitacions.xml',
-        'views/factura_serveis.xml'
+        'views/factura_serveis.xml',
+        'views/report_reserves.xml'
     ],
     'demo': [
         'demo/demo.xml'
